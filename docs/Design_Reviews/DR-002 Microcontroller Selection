@@ -1,27 +1,59 @@
 # DR-002 — Microcontroller Selection
 
-Purpose
+**Document ID:** DR-002  
+**Status:** Approved  
+**Date:** July 19, 2026  
+**Author:** Miller Sykes
 
-Candidates
-- STM32 Nucleo
+## Purpose
+
+Select the primary microcontroller platform for Project Aegis.
+
+## Candidates Considered
+
+- STM32
 - RP2040
 - ESP32
 
-Evaluation
+## Evaluation
 
-| Requirement | STM32 | RP2040 | ESP32 |
-|------------|-------|--------|-------|
-...
+### STM32
+Pros
+- Industry standard
+- Excellent peripheral set
+- Strong development tools
+- Widely used in aerospace, robotics, automotive, and industrial systems
 
-Decision
+Cons
+- Steeper learning curve
 
-Selected: STM32 Nucleo-64 (STM32G474RE)
+### RP2040
+Pros
+- Inexpensive
+- Beginner friendly
 
-Rationale
-- Plenty of peripherals
-- Excellent documentation
-- Industry relevance
-- Strong tooling
-- Room to grow
+Cons
+- Less representative of professional embedded development
 
-Revision History
+### ESP32
+Pros
+- Built-in Wi-Fi and Bluetooth
+- Large ecosystem
+
+Cons
+- Wireless features are unnecessary for early project goals
+- Less suitable as a first embedded platform for Project Aegis
+
+## Decision
+
+Project Aegis will use the STM32 family.
+
+The initial development board will be the STM32 Nucleo-64 (STM32G474RE).
+
+This platform best satisfies the project's goals of learning professional embedded systems engineering while providing sufficient performance and peripherals for future expansion.
+
+## Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | July 19, 2026 | Initial decision |
