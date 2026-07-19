@@ -9,8 +9,6 @@
 
 Select the primary microcontroller platform for Project Aegis.
 
----
-
 ## 2. Requirements
 
 The selected platform should:
@@ -23,13 +21,12 @@ The selected platform should:
 - Support future RTOS development.
 - Support future communication protocols, including CAN, SPI, I²C, and UART.
 
----
-
 ## 3. Candidates Considered
 
 ### STM32
 
 **Pros**
+
 - Industry-standard embedded platform
 - Excellent documentation
 - Professional development tools
@@ -37,42 +34,41 @@ The selected platform should:
 - Strong scalability
 
 **Cons**
+
 - Higher learning curve
 
 ### RP2040
 
 **Pros**
+
 - Low cost
 - Beginner friendly
 
 **Cons**
+
 - Less representative of professional embedded development
 
 ### ESP32
 
 **Pros**
+
 - Integrated Wi-Fi and Bluetooth
 - Large community and ecosystem
 
 **Cons**
-- Wireless capability is unnecessary for the project's initial objectives
 
----
+- Wireless capability is unnecessary for the project's initial objectives
 
 ## 4. Decision
 
 Project Aegis will use the **STM32** microcontroller family as its primary embedded platform.
 
----
-
 ## 5. Rationale
 
 STM32 best aligns with the project's objective of developing professional embedded systems engineering skills while providing a scalable platform for future expansion. Its widespread industry adoption, mature development ecosystem, extensive peripheral support, and long-term scalability make it the most suitable choice for Project Aegis.
 
----
-
 ## 6. Revision History
 
 | Version | Date | Description |
-|----------|------------|--------------------------------|
+|---|---|---|
 | 0.1 | July 19, 2026 | Initial draft created. |
