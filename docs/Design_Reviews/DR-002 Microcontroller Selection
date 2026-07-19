@@ -1,59 +1,78 @@
 # DR-002 — Microcontroller Selection
 
 **Document ID:** DR-002  
-**Status:** Approved  
+**Status:** Draft  
 **Date:** July 19, 2026  
 **Author:** Miller Sykes
 
-## Purpose
+## 1. Purpose
 
 Select the primary microcontroller platform for Project Aegis.
 
-## Candidates Considered
+---
 
-- STM32
-- RP2040
-- ESP32
+## 2. Requirements
 
-## Evaluation
+The selected platform should:
+
+- Be widely used in professional embedded systems.
+- Support long-term project growth.
+- Provide a rich peripheral set.
+- Have strong documentation and tooling.
+- Be budget-conscious.
+- Support future RTOS development.
+- Support future communication protocols, including CAN, SPI, I²C, and UART.
+
+---
+
+## 3. Candidates Considered
 
 ### STM32
-Pros
-- Industry standard
-- Excellent peripheral set
-- Strong development tools
-- Widely used in aerospace, robotics, automotive, and industrial systems
 
-Cons
-- Steeper learning curve
+**Pros**
+- Industry-standard embedded platform
+- Excellent documentation
+- Professional development tools
+- Extensive peripheral support
+- Strong scalability
+
+**Cons**
+- Higher learning curve
 
 ### RP2040
-Pros
-- Inexpensive
+
+**Pros**
+- Low cost
 - Beginner friendly
 
-Cons
+**Cons**
 - Less representative of professional embedded development
 
 ### ESP32
-Pros
-- Built-in Wi-Fi and Bluetooth
-- Large ecosystem
 
-Cons
-- Wireless features are unnecessary for early project goals
-- Less suitable as a first embedded platform for Project Aegis
+**Pros**
+- Integrated Wi-Fi and Bluetooth
+- Large community and ecosystem
 
-## Decision
+**Cons**
+- Wireless capability is unnecessary for the project's initial objectives
 
-Project Aegis will use the STM32 family.
+---
 
-The initial development board will be the STM32 Nucleo-64 (STM32G474RE).
+## 4. Decision
 
-This platform best satisfies the project's goals of learning professional embedded systems engineering while providing sufficient performance and peripherals for future expansion.
+Project Aegis will use the **STM32** microcontroller family as its primary embedded platform.
 
-## Revision History
+---
+
+## 5. Rationale
+
+STM32 best aligns with the project's objective of developing professional embedded systems engineering skills while providing a scalable platform for future expansion. Its widespread industry adoption, mature development ecosystem, extensive peripheral support, and long-term scalability make it the most suitable choice for Project Aegis.
+
+---
+
+## 6. Revision History
 
 | Version | Date | Description |
-|---|---|---|
-| 1.0 | July 19, 2026 | Initial decision |
+|----------|------------|--------------------------------|
+| 0.1 | July 19, 2026 | Initial draft created. |
