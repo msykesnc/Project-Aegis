@@ -1,0 +1,27 @@
+# DR-002 — Microcontroller Selection
+
+Purpose
+
+Candidates
+- STM32 Nucleo
+- RP2040
+- ESP32
+
+Evaluation
+
+| Requirement | STM32 | RP2040 | ESP32 |
+|------------|-------|--------|-------|
+...
+
+Decision
+
+Selected: STM32 Nucleo-64 (STM32G474RE)
+
+Rationale
+- Plenty of peripherals
+- Excellent documentation
+- Industry relevance
+- Strong tooling
+- Room to grow
+
+Revision History
